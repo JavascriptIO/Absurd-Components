@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "lib": "cpx \"../../lib/dist/**/*\" lib --watch",
-    "serve": "ng serve",
+    "serve": "ng serve --port=4300",
     "start": "concurrently \"npm run lib\" \"npm run serve\" --names \"LIB,DEMO\" --prefix name",
     "build": "ng build",
     "test": "ng test",
