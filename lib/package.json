@@ -1,0 +1,27 @@
+{
+  "name": "angular-absurd-components",
+  "version": "0.0.0",
+  "description": "Amazing and useless Angular Components for your projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavascriptIO/Absurd-Components.git"
+  },
+  "keywords": [
+    "angular",
+    "absurd",
+    "components"
+  ],
+  "author": "See repo contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JavascriptIO/Absurd-Components/issues"
+  },
+  "homepage": "https://github.com/JavascriptIO/Absurd-Components#readme",
+  "devDependencies": {
+    "generator-angular2-library": "^10.2.2"
+  }
+}
