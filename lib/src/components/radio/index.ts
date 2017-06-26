@@ -1,0 +1,1 @@
+export * from './radio-golf/radio-golf.component';

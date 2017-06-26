@@ -1,9 +1,9 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RadioGolfComponent } from './components';
+import { RadioGolfComponent } from './components/radio';
 
-export * from './components';
+export * from './components/radio';
 
 let components = [
   RadioGolfComponent
