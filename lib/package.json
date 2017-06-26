@@ -63,5 +63,8 @@
   },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "animejs": "^2.0.2"
   }
 }
