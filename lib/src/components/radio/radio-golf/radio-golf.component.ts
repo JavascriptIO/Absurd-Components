@@ -3,8 +3,9 @@ import { ClockFactory, Clock } from '../../../shared/clock';
 import anime from 'animejs';
 
 @Component({
-  selector: 'ac-radio-golf',
-  templateUrl: './radio-golf.component.html'
+  selector: 'ac-radio_golf',
+  templateUrl: './radio-golf.component.html',
+  styleUrls: ['./radio-golf.component.css']
 })
 export class RadioGolfComponent {
   private clock: Clock;
@@ -21,7 +22,7 @@ export class RadioGolfComponent {
   public stopCharging(): void {
     let time = this.clock.stop();
     var cssSelector = anime({
-      targets: '.ac-radio-golf',
+      targets: '.js-ball',
       translateX: 250
     });
   }

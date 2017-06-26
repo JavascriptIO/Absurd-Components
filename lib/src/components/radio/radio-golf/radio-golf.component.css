@@ -1,0 +1,16 @@
+.ac-radio_golf {
+    width: 100%;
+}
+
+.ac-radio_golf-holes {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.ac-radio_golf-ball {
+    background-color: black;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
