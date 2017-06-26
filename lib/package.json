@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "gulp build",
+    "postbuild": "cd ../dist && npm link",
     "build:watch": "gulp",
     "docs": "npm run docs:build",
     "docs:build": "compodoc -p tsconfig.json -n angular-absurd-components -d docs --hideGenerator",

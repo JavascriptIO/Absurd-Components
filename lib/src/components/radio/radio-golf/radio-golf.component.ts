@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ClockFactory, Clock } from '../../../shared/clock';
-import { anime } from 'animejs';
+import anime from 'animejs';
 
 @Component({
   selector: 'ac-radio-golf',

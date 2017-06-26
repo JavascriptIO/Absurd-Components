@@ -4,9 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "link": "npm link angular-absurd-components",
     "serve": "ng serve --port=4300",
-    "prestart": "npm run link",
     "start": "npm run serve",
     "build": "ng build",
     "test": "ng test",
@@ -27,6 +25,8 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular-absurd-components": "file:..\\..\\dist",
+    "animejs": "^2.0.2",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"

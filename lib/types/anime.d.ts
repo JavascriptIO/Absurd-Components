@@ -5,10 +5,12 @@ declare var anime: AnimeStatic;
 // Temporal fix
 // author https://github.com/kohashi/types-npm-animejs
 declare module "animejs" {
-    export var anime = anime;
+    export default anime;
 }
 
+// declare namespace anime {
 
+// }
 /** Query selector string. Same as jQuery. */
 declare type  target = string | Element | NodeList | Object | any[];
 
