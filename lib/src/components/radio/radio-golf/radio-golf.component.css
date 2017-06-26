@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+.ac-radio_golf-path {
+    width: 100%;
+}
+
 .ac-radio_golf-ball {
     background-color: black;
     border-radius: 50%;
