@@ -8,17 +8,10 @@
   </div>
 
   <ul class="ac-radio_golf-holes">
-    <li class="ac-radio_golf-hole">
-      <input class="ac-radio_golf-input" name="RADIOFORM" type="radio">
-      <label class="ac-radio_golf-label">Radio 1</label>
-    </li>
-    <li class="ac-radio_golf-hole">
-      <input class="ac-radio_golf-input" name="RADIOFORM" type="radio">
-      <label class="ac-radio_golf-label">Radio 2</label>
-    </li>
-    <li class="ac-radio_golf-hole">
-      <input class="ac-radio_golf-input" name="RADIOFORM" type="radio">
-      <label class="ac-radio_golf-label">Radio 2</label>
+    <li class="ac-radio_golf-hole js-radio_golf-hole" *ngFor="let hole of holes; let i = index">
+      <span class="ac-radio_golf-target js-radio_golf-target">{{hole.active}}</span>
+      <input class="ac-radio_golf-input js-radio_golf-input" name="{{name}}" type="radio">
+      <label class="ac-radio_golf-label js-radio_golf-label">Radio {{i}}</label>
     </li>
   </ul>
 </div>
