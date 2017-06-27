@@ -1,5 +1,5 @@
 <div class="ac-radio_golf">
-  <div class="ac-radio_golf-stick">
+  <div class="ac-radio_golf-stick" *ngIf="!animating">
     <button (mousedown)="startCharging()" (mouseup)="stopCharging()">s</button>
   </div>
 
