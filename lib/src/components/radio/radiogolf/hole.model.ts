@@ -1,7 +1,7 @@
 let selectors = {
-  target: '.js-radio_golf-target',
-  label: '.js-radio_golf-label',
-  input: '.js-radio_golf-input',
+  target: '.js-radiogolf-target',
+  label: '.js-radiogolf-label',
+  input: '.js-radiogolf-input',
 };
 
 export class Hole {

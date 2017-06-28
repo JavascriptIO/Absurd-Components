@@ -1,1 +1,1 @@
-export * from './radio-golf/radio-golf.component';
+export * from './radiogolf/radiogolf.component';

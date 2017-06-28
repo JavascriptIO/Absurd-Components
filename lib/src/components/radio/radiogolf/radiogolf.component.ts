@@ -4,9 +4,9 @@ import anime from 'animejs';
 import { Hole } from './hole.model';
 
 @Component({
-  selector: 'ac-radio_golf',
-  templateUrl: './radio-golf.component.html',
-  styleUrls: ['./radio-golf.component.css']
+  selector: 'ac-radiogolf',
+  templateUrl: './radiogolf.component.html',
+  styleUrls: ['./radiogolf.component.css']
 })
 export class RadioGolfComponent implements OnInit, AfterViewChecked  {
   private clock: Clock;
@@ -16,9 +16,9 @@ export class RadioGolfComponent implements OnInit, AfterViewChecked  {
   public holes: Array<Hole> = [];
   private elements: any = {};
   private selectors = {
-    path: '.js-radio_golf-path',
-    ball: '.js-radio_golf-ball',
-    hole: '.js-radio_golf-hole',
+    path: '.js-radiogolf-path',
+    ball: '.js-radiogolf-ball',
+    hole: '.js-radiogolf-hole',
   };
 
   @Input() inputs: string;

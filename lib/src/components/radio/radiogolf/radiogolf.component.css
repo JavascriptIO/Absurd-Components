@@ -1,9 +1,9 @@
-.ac-radio_golf {
+.ac-radiogolf {
     margin-left: 15%;
     width: 50%;
 }
 
-.ac-radio_golf-holes {
+.ac-radiogolf-holes {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -11,18 +11,18 @@
     padding: 0;
 }
 
-.ac-radio_golf-path {
+.ac-radiogolf-path {
     width: 100%;
 }
 
-.ac-radio_golf-ball {
+.ac-radiogolf-ball {
     background-color: black;
     border-radius: 50%;
     height: 1rem;
     width: 1rem;
 }
 
-.ac-radio_golf-target {
+.ac-radiogolf-target {
     background-color: red;
     display: block;
     height: 2rem;
