@@ -1,5 +1,5 @@
 <div class="ac-radiogolf">
-  <div class="ac-radiogolf-stick" *ngIf="!animating">
+  <div class="ac-radiogolf-stick" [ngClass]="{'ac-radiogolf-stick--disabled': animating}">
     <button (mousedown)="startCharging()" (mouseup)="stopCharging()">s</button>
   </div>
 
@@ -9,7 +9,9 @@
 
   <ul class="ac-radiogolf-holes">
     <li class="ac-radiogolf-hole js-radiogolf-hole" *ngFor="let hole of holes; let i = index">
-      <span class="ac-radiogolf-target js-radiogolf-target"></span>
+      <span class="ac-radiogolf-target js-radiogolf-target">
+        <span class="ac-radiogolf-inside"></span>
+      </span>
       <input class="ac-radiogolf-input js-radiogolf-input" value="{{i}}" name="{{name}}" type="radio" [checked]="hole.active">
       <label class="ac-radiogolf-label js-radiogolf-label">Radio {{i}}</label>
     </li>

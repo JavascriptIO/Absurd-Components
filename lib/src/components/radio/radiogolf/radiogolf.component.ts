@@ -8,7 +8,7 @@ import { Hole } from './hole.model';
   templateUrl: './radiogolf.component.html',
   styleUrls: ['./radiogolf.component.css']
 })
-export class RadioGolfComponent implements OnInit, AfterViewChecked  {
+export class RadioGolfComponent implements OnInit, AfterViewChecked {
   private clock: Clock;
   private readonly maxTime = 3000;
   private readonly easing = [0, .2, 0, .95];
@@ -63,6 +63,12 @@ export class RadioGolfComponent implements OnInit, AfterViewChecked  {
 
       if (ballLeft >= left && ballLeft <= left + width) {
         hole.active = true;
+        anime({
+          targets: this.$ball,
+          translateY: '1rem',
+          rotate: '1turn',
+          scale: 0
+        });
       }
     }
   }
@@ -88,8 +94,8 @@ export class RadioGolfComponent implements OnInit, AfterViewChecked  {
     this.animating = true;
     let time = this.clock.stop();
     let translation = time * 100 / this.maxTime;
-    var pr = prompt('translate %?');
-    translation = parseFloat(pr);
+    // var pr = prompt('translate %?');
+    // translation = parseFloat(pr);
     let options = {
       translateX: `${translation}%`,
       easing: this.easing
@@ -102,6 +108,7 @@ export class RadioGolfComponent implements OnInit, AfterViewChecked  {
     anime(Object.assign({}, options, {
       targets: this.$ball,
       translateX: `${-translation}%`,
+      rotate: `${translation / 10}turn`
     })).finished.then(() => this.onFinishAnimation());
   }
 
